@@ -9282,4 +9282,83 @@ kbd {
     width: 100px;
     height: 100px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+/* ==========================================================================
+   Tejx additions - service icon badge + paid-advertising platform chips
+   Appended by hand. NOTE: style.css is compiled from assets/sass/, so
+   re-running the Sass build will drop this block. Move it into a Sass
+   partial if the build is ever used again.
+   ========================================================================== */
+.service-card .service-card-item.style-1 .service-left-info .tejx-service-head {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 38px;
+}
+.service-card .service-card-item.style-1 .service-left-info .tejx-service-head .service-title {
+  margin-bottom: 0;
+}
+.tejx-service-icon {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background-color: rgba(255, 74, 35, 0.12);
+  color: var(--primary-color);
+  font-size: 26px;
+  line-height: 1;
+}
+
+.tejx-platform-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.tejx-platform-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border: 1px solid rgba(255, 74, 35, 0.25);
+  border-radius: 999px;
+  background-color: rgba(255, 74, 35, 0.1);
+  color: var(--primary-color);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.tejx-platform-chip iconify-icon {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 991px) {
+  .service-card .service-card-item.style-1 .service-left-info .tejx-service-head {
+    gap: 14px;
+    margin-bottom: 30px;
+  }
+  .tejx-service-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .tejx-service-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  .tejx-platform-chip {
+    padding: 5px 12px;
+    font-size: 13px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
